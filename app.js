@@ -1,8 +1,10 @@
-const animationDuration = 400;
-const animationOffset = 100;
-
 async function handleWelcomeMessage() {
-  await new Promise((r) => setTimeout(r, animationDuration * 4 + animationOffset));
+  const animationDuration = 400;
+  const animationOffset = 100;
+
+  await new Promise((r) =>
+    setTimeout(r, animationDuration * 4 + animationOffset),
+  );
 
   let welcomeTextElement = document.getElementById("welcome-text");
   let cursor = document.getElementById("cursor");
@@ -16,7 +18,9 @@ async function handleWelcomeMessage() {
   }
   cursor.classList.add("blinking");
 
-  await new Promise((r) => setTimeout(r, animationDuration * 5 + animationOffset));
+  await new Promise((r) =>
+    setTimeout(r, animationDuration * 5 + animationOffset),
+  );
   cursor.remove();
 }
 
