@@ -80,7 +80,8 @@ p > a:hover {
   border-bottom: 3px solid rgb(0, 0, 0);
 }
 
-p {
+p,
+p * {
   color: var(--paragraph-text-color);
   line-height: 2rem;
 }
@@ -134,7 +135,9 @@ p {
   padding: 5px 10px;
   border-radius: 0.5rem;
 
-  transition: 0.1s ease-out border, 0.2s ease-out background-color;
+  transition:
+    0.1s ease-out border,
+    0.2s ease-out background-color;
 }
 
 .button:hover {
